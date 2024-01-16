@@ -2,17 +2,46 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   color: #222;
+  /* my codes */
+  padding: 10px;
+  margin: 0 auto;
+  width: fit-content;
+  /* end of my codes */
 }
+
+  /* my codes */
+  .emojis{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 50%);
+    gap: 10px;
+    width: 75%;
+  }
+  /* end of my codes */
 
 .emoji {
   border: 1px solid #222;
   border-radius: 8px;
   padding: 1rem;
+  /* my codes */
+    display: flex;
+    justify-content: start;
+    justify-self: start;
+    align-items: center;
+    flex-direction: column;
+    width: fit-content;
+    padding: 5%;
+  /* end of my codes */
 }
 
 .emoji h2 {
   margin: 0;
   border-bottom: 2px solid #ccc;
+    /* my codes */
+    width: 100%;
+    text-align: start;
+    order: 1;
+    /* end of my codes */
 }
 
 .emoji a {
@@ -21,8 +50,21 @@ body {
   color: white;
   padding: 1rem;
   border-radius: 8px;
+  /* my codes */
+  width: 100%;
+  order: 3;
+  margin-top: auto;
+  /* end of my codes */
 }
 
 .icon {
   font-size: 4rem;
+  /* my code */
+  order: 0;
+  justify-self: center;
+  /* end of my code */
+}
+
+.emoji p{
+    order: 2;
 }
