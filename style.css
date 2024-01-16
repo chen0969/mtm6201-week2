@@ -15,7 +15,6 @@ body {
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: repeat(2, 50%);
     gap: 10px;
-    width: 80%;
   }
   /* end of my codes */
 
@@ -24,12 +23,15 @@ body {
   border-radius: 8px;
   padding: 1rem;
   /* my codes */
+  box-sizing: border-box;
     display: flex;
     justify-content: start;
     justify-self: start;
     align-items: center;
     flex-direction: column;
     width: fit-content;
+    min-width: 400px;
+    max-width: 500px;
     aspect-ratio: 1.1/1;
     padding: 5%;
   /* end of my codes */
@@ -52,7 +54,7 @@ body {
   padding: 1rem;
   border-radius: 8px;
   /* my codes */
-  width: 100%;
+  width: 90%;
   order: 3;
   margin-top: auto;
   /* end of my codes */
@@ -68,4 +70,13 @@ body {
 
 .emoji p{
     order: 2;
+}
+
+@media only screen and (max-width: 900px){
+  .emojis{
+    display: grid;
+    grid-template-columns: repeat(1, 50%);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+  }
 }
